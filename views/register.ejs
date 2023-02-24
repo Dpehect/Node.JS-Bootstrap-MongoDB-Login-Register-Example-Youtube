@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kaydol</h1>
+      <div id="error" class="error"></div>
+      <form method="post" action="/register" onsubmit="return validateRegistrationForm()">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <label for="password">Şifre</label>
+        <input type="password" id="password" name="password">
+        <label for="confirm-password">Şifre Onaylama</label>
+        <input type="password" id="confirm-password" name="confirmPassword">
+        <input type="submit" value="Kaydol">
+      </form>
+      <p>Zaten Hesabın Var Mı? <a href="/">Giriş</a></p>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Giriş Yap</title>
+    <link rel="stylesheet" href="/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Giriş Yap</h1>
+      <div id="error" class="error"></div>
+      <form method="post" action="/login" onsubmit="return validateLoginForm()">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email">
+        <label for="password">Şifre</label>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Giriş">
+      </form>
+      <p>Hesabın Yok Mu? <a href="/register">Kaydol</a></p>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
