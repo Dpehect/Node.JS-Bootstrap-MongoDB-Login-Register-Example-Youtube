@@ -8,7 +8,7 @@ const app = express();
 mongoose.set('strictQuery', true);
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://Dpehect:deneme123@cluster0.olfqcop.mongodb.net/login-example', {
+mongoose.connect('mongodb+srv://username:password@cluster0.olfqcop.mongodb.net/login-example', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
